@@ -83,10 +83,10 @@ public class BankAmountWithdrawal {
 
                 case 2:
                     System.out.print("Enter Account No U Want to Search...: ");
-                    String acn = scanner.next();
+                    String account = scanner.next();
                     boolean found = false;
                     for (int i = 0; i < sbi.length; i++) {
-                        found = sbi[i].search(acn);
+                        found = sbi[i].search(account);
                         if (found) {
                             break;
                         }
@@ -98,10 +98,10 @@ public class BankAmountWithdrawal {
 
                 case 3:
                     System.out.print("Enter Account No : ");
-                    acn = scanner.next();
+                    account = scanner.next();
                     found = false;
                     for (int i = 0; i < sbi.length; i++) {
-                        found = sbi[i].search(acn);
+                        found = sbi[i].search(account);
                         if (found) {
                             sbi[i].accountDeposit();
                             break;
@@ -114,10 +114,10 @@ public class BankAmountWithdrawal {
 
                 case 4:
                     System.out.print("Enter Account No : ");
-                    acn = scanner.next();
+                    account = scanner.next();
                     found = false;
                     for (int i = 0; i < sbi.length; i++) {
-                        found = sbi[i].search(acn);
+                        found = sbi[i].search(account);
                         if (found) {
                             sbi[i].accountWithdrawal();
                             break;
